@@ -1,9 +1,9 @@
 ﻿
-string[] inputArray = InputStringArray();
-int limitString = InputInt("Введите максимальную длину строки: ");
-string[] resultArray = FindStringByLenght(inputArray, limitString);
+string[] strings = InputStringArray();
+int numberStrings = InputInt("Введите максимальную длину строки: ");
+string[] resultArray = FindStringByLenght(strings, numberStrings);
 
-PrintStringArray(inputArray, "Исходный массив");
+PrintStringArray(strings, "Исходный массив");
 PrintStringArray(resultArray, "Соответствующие критерию строки");
 
 string[] FindStringByLenght(string[] stringArray, int limit)
